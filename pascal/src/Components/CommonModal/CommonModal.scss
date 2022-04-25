@@ -1,0 +1,28 @@
+// @import "../../Assets/";
+
+table {
+  tbody {
+    a {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 117, 221, 1) 0%,
+        rgba(4, 197, 251, 1) 100%
+      );
+      text-transform: capitalize;
+      text-decoration: none;
+      padding: 5px 12px;
+      color: #fff;
+      border-radius: 6px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+#txn-model .modal-content {
+  width: auto;
+}
+.no_txn_found{
+  color:white;
+  text-align:center;
+}

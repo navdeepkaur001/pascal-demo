@@ -1,0 +1,149 @@
+@import "../../Theme/_vars.scss";
+@import "../../Theme/_mixins.scss";
+
+.footer_sec {
+  background-image: url("../../Assets/images/Bg4.png");
+  padding: 100px 0;
+  background-size: cover;
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+  .footer-col {
+    display: flex;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  .footer_text {
+    margin-top: 37px;
+    max-width: 69%;
+    padding-right: 75px;
+
+    @media (max-width: 991px) {
+      margin-top: 0px;
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    p {
+      color: var(--unnamed-color-ffffff);
+      text-align: left;
+      font: normal normal 300 16px/30px Poppins;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+  }
+  .social {
+    ul {
+      padding: 0;
+      @media(max-width:992px){
+        display: flex;
+      }
+      li {
+        display: inline-block;
+        margin-bottom: 16px;
+        margin-right: 20px;
+        img {
+          width: 37px;
+          height: 37px;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      padding: 30px 0;
+    }
+    @media (max-width: 767px) {
+      padding: 0px 0;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 34px;
+      @media (max-width: 991px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .form_text {
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal normal 28px/42px Poppins;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    @media (max-width: 991px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  form {
+    margin-top: 50px;
+    input.form-control {
+      background: #ffffff14 0% 0% no-repeat padding-box;
+      border: 1px solid #313339;
+      border-radius: 4px;
+      opacity: 1;
+      height: 54px;
+      color: $white;
+      padding: 0 18px;
+      &::placeholder {
+        color: $white;
+      }
+      &:focus {
+        box-shadow: unset !important;
+        border: 1px solid $orange;
+      }
+    }
+    .mb-3.form-group {
+      textarea#exampleForm\.ControlTextarea1 {
+        background: #ffffff14 0% 0% no-repeat padding-box;
+        border: 1px solid #313339;
+        border-radius: 4px;
+        opacity: 1;
+        color: $white;
+        padding: 15px 18px;
+        &::placeholder {
+          color: $white;
+          font-size: 16px;
+        }
+        &:focus {
+          box-shadow: unset !important;
+          border: 1px solid $orange;
+        }
+      }
+    }
+    .foot_btn {
+      text-align: end;
+      margin-top: 49px;
+      @media (max-width: 991px) {
+        margin-top: 10px;
+      }
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+      button.cm_btn.btn.btn-primary {
+        background: transparent
+          linear-gradient(270deg, #ef5c1b 0%, #ef7f1b 100%) 0% 0% no-repeat
+          padding-box;
+        box-shadow: 0px 0px 30px #ef7f1b57;
+        opacity: 1;
+        border-radius: 35px;
+        padding: 17px 69px;
+        line-height: 30px;
+
+        border: none;
+        @media (max-width: 991px) {
+          padding: 12px 25px;
+        }
+      }
+    }
+  }
+}
+.count_span{
+  float: right;
+}

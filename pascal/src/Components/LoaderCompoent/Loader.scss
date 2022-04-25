@@ -1,0 +1,17 @@
+.overlayloader {
+    width:100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 100000;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(42, 46, 47, 0.8);
+  }
+   .sr-only {
+    width:'100rem';
+  }

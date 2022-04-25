@@ -1,0 +1,170 @@
+@import "../../Theme/_vars.scss";
+@import "../../Theme/_mixins.scss";
+
+.swap-slider {
+  .item {
+    text-align: center;
+    margin-top: 59px;
+    background: transparent
+      radial-gradient(
+        closest-side at 50% 50%,
+        rgba(27, 126, 239, 0.2) 0%,
+        rgba(1, 1, 9, 0) 100%
+      )
+      0% 0% no-repeat padding-box;
+    mix-blend-mode: screen;
+
+    .sliderimg {
+      width: 183px;
+      height: 183px;
+      margin: 0 auto;
+      @media (max-width: 767px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .slider-title {
+      font-size: 30px;
+      color: $orange;
+      margin-top: 54px;
+      @media (max-width: 991px) {
+        font-size: 25px;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+    .swap-col {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    .swap-list {
+      background: #ffffff0a;
+      border: 1px solid #212330;
+      border-radius: 20px;
+      width: 273px;
+      // height: 166px;
+      text-align: left;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 19px;
+      padding:5px 30px;
+      // padding-top: 25px;
+      margin-top: 31px;
+      margin-bottom: 61px;
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+      .price_sec{
+        display: flex;
+        align-items: center;
+        }
+      img {
+        width: 33px;
+        height: 33px;
+        image-rendering: pixelated;
+        // margin-bottom: 15px;
+      }
+      .date {
+        // font-size: 24px;
+        line-height: 42px;
+        margin-bottom: 0;
+        font-weight: 300;
+      }
+      small {
+        color: $orange;
+        font-size: 16px;
+      }
+    }
+  }
+  .owl-nav {
+    button {
+      &:hover {
+        background: #212330 !important;
+        border-radius: 100%;
+      }
+    }
+
+    .owl-prev {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: -5%;
+      @media (max-width: 1440px) {
+        left: 0%;
+      }
+      @media (max-width: 991px) {
+        left: -2%;
+      }
+      @media (max-width: 767px) {
+        position: static;
+        transform: unset;
+      }
+      span {
+        font-size: 0;
+        background-image: url(../../Assets/images/leftarrow.png);
+        width: 56px;
+        height: 56px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        border-radius: 100%;
+        background-size: contain;
+        @media (max-width: 767px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: -5%;
+      @media (max-width: 1440px) {
+        right: 0%;
+      }
+      @media (max-width: 767px) {
+        position: static;
+        transform: unset;
+      }
+      span {
+        font-size: 0;
+        background-image: url(../../Assets/images/rightarrow.png);
+        width: 56px;
+        height: 56px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        border-radius: 100%;
+        background-size: contain;
+        @media (max-width: 767px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: $white;
+    width: 16px;
+    border-radius: 9px;
+  }
+  .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin: 0 3px;
+  }
+}

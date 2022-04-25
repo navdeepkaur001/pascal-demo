@@ -1,0 +1,42 @@
+@import "./Theme/_vars.scss";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: $white !important;
+  font-family: "Poppins", sans-serif !important;
+  background: $black !important; 
+  background: #141422 0% 0% no-repeat padding-box !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+a:hover {
+  text-decoration: none;
+}
+code {
+  font-family: $font;
+}
+// .container,
+// .container-fluid,
+// .container-sm,
+// .container-md,
+// .container-lg,
+// .container-xl {
+//   display: flex;
+// }
+.custom-width {
+  @media (min-width: 1200px) {
+    max-width: 1375px !important;
+  }
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: unset !important;
+}
+
+button:focus {
+  outline: none !important;
+}

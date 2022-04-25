@@ -1,0 +1,96 @@
+@import "../../Theme/_vars.scss";
+@import "../../Theme/_mixins.scss";
+.custom-header {
+  max-width: 1500px;
+  @media (max-width: 1199px) {
+    max-width: 100%;
+  }
+  .connect-btn {
+    border: 1px solid #ef7f1b;
+    border-radius: 25px;
+    height: 45px;
+    color: #ef7f1b;
+    font-size: 16px;
+    background: transparent;
+    line-height: 33px;
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 20px;
+      right: 90px;
+      height: 43px;
+      font-size: 15px;
+      line-height: 42px;
+    }
+
+    &:hover,
+    &:focus {
+      background: $orange;
+      color: $white;
+      border-color: $orange;
+    }
+  }
+}
+.topbar {
+  background: #050608 !important;
+  padding-top: 10px;
+  .logo {
+    width: 57px;
+    height: 57px;
+  }
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: 300;
+      padding: 7px 25px;
+      cursor: pointer;
+      &:hover,
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+  .custom-header {
+    @media (max-width: 991px) {
+      .connect-btn {
+        top: 30px;
+        right: 70px;
+        height: auto;
+        line-height: unset;
+        border: 0; 
+      }
+    
+      .walletAddress_span {
+        font-size: 14px;
+        position: absolute;
+        top: 35px;
+        right: 200px;
+      }
+    }
+    @media (max-width: 767px){
+      .connect-btn{
+        position: absolute;
+        top:35px;
+        right: 77px;
+      }
+      .walletAddress_span {
+        font-size: 14px;
+        position: absolute;
+        top: 35px;
+        right: 200px;
+      }
+    }
+     @media (max-width: 480px){
+        .walletAddress_span {
+        font-size: 14px;
+        position: absolute;
+        top: 60px;
+        right: 83px;
+  }
+}
+  }
+}
+.navbar-toggler {
+  background: $orange;
+}

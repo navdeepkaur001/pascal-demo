@@ -1,0 +1,74 @@
+@import "../../../Theme/vars.scss";
+@import "../../../Theme/_mixins.scss";
+
+.adjustble_vh {
+  height: 100vh;
+  align-items: center;
+  .login_area {
+    background: $loginBaseColor;
+    padding: 30px;
+    border-radius: 15px;
+    .LogoBox {
+      margin: 10px 0 30px;
+      @media (min-height: 901px) {
+        img {
+          width: 90px;
+          margin: 0 0 10px;
+        }
+      }
+      @media (max-height: 900px) {
+        margin-bottom: 25px;
+        img {
+          width: 90px;
+          margin: 0 0 10px;
+        }
+      }
+      @media (max-width: 767px) {
+        img {
+          width: 65px;
+        }
+      }
+      @media (max-height: 770px) {
+        margin-bottom: 15px;
+      }
+    }
+    .form-group {
+      margin-bottom: 20px;
+      label {
+        color: $white;
+        font-size: 14px;
+        margin: 0;
+      }
+      .form-control {
+        height: 45px;
+        font-size: 15px;
+        border-radius: 6px;
+      }
+    }
+    .buttomBtn {
+      .buttonPrimary_style.btn-primary {
+        height: 50px;
+        font-size: 17px;
+        min-width: 125px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.error-msg {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.main_walletAddress {
+  width: auto;
+  height: auto;
+  border: 1px solid #f9d303;
+  border-radius: 15px;
+  padding: 14px;
+  text-align: center;
+}
+.walletAddress_span {
+  color: white;
+  font-size: 15px;
+}

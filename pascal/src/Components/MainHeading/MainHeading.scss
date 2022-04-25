@@ -1,0 +1,26 @@
+@import "../../Theme/_vars.scss";
+@import "../../Theme/_mixins.scss";
+
+.cm_title {
+  .heading {
+    font-size: 32px;
+    line-height: 42px;
+    color: $white;
+    margin-bottom: 30px;
+    font-weight: normal;
+    @media (max-width: 1199px) {
+      margin-bottom: 15px;
+
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @media (max-width: 991px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+    span {
+      color: $orange;
+      margin-left: 5px;
+    }
+  }
+}

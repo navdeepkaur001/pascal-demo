@@ -1,0 +1,23 @@
+@import "../../Theme/_vars.scss";
+.goBackButtonStyle{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    border-radius: 10px;
+    background: $buttonbg;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; transition: all ease 0.5s; -webkit-transition: all ease 0.5s;
+    left: 15px; top: -67px;
+    @media (max-width:767.98px){
+            top: -55px;
+            width: 40px;
+            height: 40px;
+            line-height: 39px;
+    }
+    &:hover{
+        box-shadow: 0 0 10px rgb(246, 124, 24); 
+        transition: all ease 0.5s; -webkit-transition: all ease 0.5s;
+    }
+    
+}
